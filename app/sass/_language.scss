@@ -1,0 +1,41 @@
+.language {
+  position: absolute;
+  top: 65px;
+  right: 10px;
+
+  &__item{
+    display: block;
+    margin-bottom: 9px;
+    font-size: 10px;
+    color: $language-color;
+    text-align: right;
+
+    &:before{
+      display: block;
+      width: 27px;
+      height: 17px;
+      background: url('../img/icons-flags.png') no-repeat 0 0;
+      content: '';
+    }
+
+    &_eng:before{
+      background-position: 0 0;
+    }
+
+    &_chi:before{
+      background-position: 0 -35px;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .language {
+    top: 52px;
+  }
+
+}
+
+

@@ -1,0 +1,22 @@
+.logo {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  z-index: 1;
+  width: 105px;
+  transform: translateX(-50%);
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .logo {
+    width: 248px;
+  }
+
+}
