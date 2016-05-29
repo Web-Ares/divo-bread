@@ -1,0 +1,138 @@
+.catalog-list{
+  font-size: 15px;
+  line-height: 16px;
+  color: #6f4c38;
+  background: #fff;
+}
+.catalog-list p{
+  text-indent: 10px;
+  letter-spacing: -0.2px;
+}
+.catalog-list__diploma{
+  margin-bottom: 14px;
+}
+.catalog-list__description{
+  margin-bottom: 20px;
+}
+.catalog-list__pic{
+  min-height: 226px;
+  padding-bottom: 243px;
+  background: no-repeat center bottom;
+  color: #de9f25;
+  text-align: right;
+  white-space: pre-line;
+}
+.catalog-list__img {
+  text-align: center;
+}
+.catalog-list__item{
+  margin-bottom: 41px;
+  padding-top: 36px;
+  border-top: 3px solid #e8bc6b;
+}
+.catalog-list__item p{
+  text-indent: 14px;
+}
+.catalog-list__item td{
+  padding-right: 10px;
+}
+.catalog-list__title{
+  margin-bottom: 46px;
+  color: #962827;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.catalog-list__title span{
+  display: block;
+}
+.catalog-list__img img{
+  max-width: 100%;
+  height: auto;
+}
+.catalog-list__buy{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 37px;
+  color: #de9f25;
+  font-size: 14px;
+  border: 3px solid #de9f25;
+  text-transform: uppercase;
+  line-height: 20px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.catalog-list__buy:hover{
+  background: #de9f25;
+  color: #fff;
+}
+.catalog-list__composition-title{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+  color: #962827;
+  font-weight: 700;
+}
+.catalog-list__composition{
+  display: block;
+  font-weight: 600;
+}
+.site_inside{
+  background: #fff;
+}
+@media (min-width: $phone-landscape) {
+  .catalog-list__item>div {
+    width: 49.7%;
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .catalog-list__diploma{
+      text-align: justify;
+
+    &:after{
+      display: inline-block;
+      width: 100%;
+      content: "";
+    }
+  }
+  .catalog-list__description {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    text-align: left;
+  }
+  .catalog-list__pic {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding-right: 159px;
+    padding-bottom: 0;
+    background: no-repeat top right;
+  }
+  .catalog-list__img{
+    margin-bottom: 33px;
+  }
+  .catalog-list__item{
+    text-align: justify;
+  }
+  .catalog-list__item:after{
+    display: inline-block;
+    width: 100%;
+    content: "";
+  }
+  .catalog-list__item>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    text-align: left;
+  }
+}
+@media (min-width: $desktop) {
+  .catalog-list__description {
+    width: 56%;
+  }
+  .catalog-list__pic {
+    width: 43%;
+  }
+}
