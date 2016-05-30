@@ -1,0 +1,50 @@
+.social-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 0 10px;
+
+  &__item{
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    margin-bottom: 15px;
+    border: 5px solid #ae2a31;
+    border-radius: 50%;
+    opacity: .7;
+    background: url("../img/icons-social.png") no-repeat 0 0;
+    @include oneEvent(opacity);
+
+    &:hover{
+      opacity: 1;
+    }
+
+    &_fb{
+      background-position: 11px 11px;
+    }
+
+    &_vk{
+      background-position: -107px 11px;
+    }
+
+    &_ok{
+      background-position: -220px 11px;
+    }
+
+    &_yb{
+      background-position: 11px -89px;
+    }
+
+    &_ig{
+      background-position: -106px -89px;
+    }
+
+    &_gg{
+      background-position: -220px -89px;
+    }
+
+  }
+
+}
+

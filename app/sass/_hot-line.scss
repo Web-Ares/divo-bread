@@ -1,0 +1,44 @@
+.hot-line {
+  width: 245px;
+  margin: 0 auto 20px;
+  color: #ad2a30;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+
+  &:before{
+    display: block;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: url('../img/icons-social.png') no-repeat 16px -184px #fbedd0;
+    margin: 0 auto;
+    content: '';
+  }
+
+  &__phone {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 600;
+
+    a {
+      color: #ad2a30;
+      cursor: default;
+    }
+
+  }
+
+  &__content{
+    line-height: 21px;
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .hot-line {
+    margin: 0;
+  }
+
+}

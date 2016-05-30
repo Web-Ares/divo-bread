@@ -1,0 +1,17 @@
+.media {
+  display: block;
+  margin-bottom: 26px;
+  opacity: .8;
+  @include oneEvent(opacity);
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+
+}
+
