@@ -5,6 +5,10 @@
   @include main-font1;
   overflow: hidden;
 
+  &_inside{
+    background-color: $site-back-inside;
+  }
+
   &__header{
     height: 160px;
     background: url('../img/bg-head.jpg') no-repeat top center;
@@ -51,7 +55,6 @@
 
   &__title{
     margin-bottom: 24px;
-    color: #962827;
     font-size: 17px;
     text-align: center;
     text-transform: uppercase;
@@ -59,9 +62,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 
-    span{
+    span, a{
       position: relative;
       padding: 0 10px;
+      color: #962827;
 
       &:before,
       &:after{
@@ -81,6 +85,10 @@
         left: 100%;
       }
 
+    }
+
+    a:hover{
+      text-decoration: underline;
     }
 
   }
@@ -144,14 +152,6 @@
       content: '';
     }
 
-    &_inside{
-
-      .site__content{
-        margin-bottom: 50px;
-      }
-
-    }
-
     &__content{
 
       &-layout{
@@ -166,6 +166,7 @@
 
     &__aside{
       width: 360px;
+      margin: 0;
     }
 
     &__wrap{

@@ -1,0 +1,47 @@
+.achievements {
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #e8bc6b;
+  font-size: 14px;
+  line-height: 16px;
+
+  &__description {
+    margin-bottom: 20px;
+    color: #6f4c38;
+    text-align: left;
+  }
+
+  &__diploma {
+    width: 320px;
+    height: 226px;
+    margin: 0 auto;
+    padding-right: 159px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #de9f25;
+    text-align: right;
+    white-space: pre-line;
+  }
+
+}
+@media (min-width: $tablet-portrait) {
+
+  .achievements {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    &__description {
+      width: 440px;
+    }
+
+    &__diploma {
+      width: 340px;
+      margin: 0;
+      padding-bottom: 0;
+    }
+
+  }
+
+}

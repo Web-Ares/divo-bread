@@ -8,6 +8,7 @@
   }
 
   &__item{
+    position: relative;
     width: 228px;
     margin: 0 auto 15px;
     color: #6f4c38;
@@ -53,6 +54,36 @@
 
   &__more{
     color: #da251d;
+  }
+
+  &__tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    padding: 3px 10px 3px 3px;
+    color: #fff;
+    font: bold 10px/9px 'Arial', sans-serif;
+    background-color: #dd9f24;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:after {
+      right: 0;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(221, 159, 36, 0);
+      border-right-color: #fff;
+      border-width: 16px 7px 16px 0;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+
   }
 
 }
