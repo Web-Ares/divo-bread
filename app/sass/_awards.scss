@@ -1,0 +1,40 @@
+.awards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  padding-top: 5px;
+  text-align: right;
+
+  &__content{
+    width: 220px;
+    font-size: 13px;
+    color: #6f4c38;
+  }
+
+  &__item{
+    margin-bottom: 11px;
+    padding-top: 3px;
+    line-height: 16px;
+  }
+
+  &__all a{
+    font-size: 12px;
+    color: #da251d;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+  &__img{
+    width: 134px;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+}

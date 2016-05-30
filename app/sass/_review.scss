@@ -1,0 +1,17 @@
+.review {
+  display: block;
+  margin-bottom: 17px;
+  opacity: .8;
+  @include oneEvent(opacity);
+
+  img{
+    display: block;
+    width: 100%;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+
+}
+

@@ -1,0 +1,62 @@
+.footer {
+  width: 300px;
+  margin: 0 auto;
+
+  &__menu{
+    margin-bottom: 15px;
+    line-height: 24px;
+  }
+
+  &__menu-title{
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #962827;
+    text-transform: uppercase;
+  }
+
+  &__menu-item{
+    font-size: 18px;
+    color: #6f4c38;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 728px;
+    margin-bottom: 20px;
+
+    &__menu{
+      margin-bottom: 0;
+    }
+
+    &__menu-title{
+      height: 36px;
+      margin-bottom: 7px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .footer {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 800px;
+    margin: 0;
+  }
+
+}
+

@@ -5,13 +5,6 @@
   @include main-font1;
   overflow: hidden;
 
-  &:after{
-    display: block;
-    width: 100%;
-    height: 321px;
-    content: '';
-  }
-
   &__header{
     height: 160px;
     background: url('../img/bg-head.jpg') no-repeat top center;
@@ -29,11 +22,15 @@
   }
 
   &__content{
+    background-position: center;
+    background-size: cover;
 
     &-layout{
       min-width: 320px;
       max-width: 1206px;
       margin: 0 auto;
+      padding-top: 35px;
+      overflow: hidden;
     }
 
   }
@@ -41,11 +38,14 @@
   &__wrap{
     max-width: 790px;
     min-width: 320px;
+    margin: 0 auto 20px;
     padding: 0 10px;
+    text-align: center;
   }
 
   &__aside{
-    min-width: 320px;
+    width: 300px;
+    margin: 0 auto;
     max-width: 360px;
   }
 
@@ -55,7 +55,9 @@
     font-size: 17px;
     text-align: center;
     text-transform: uppercase;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 
     span{
       position: relative;
@@ -64,7 +66,7 @@
       &:before,
       &:after{
         position: absolute;
-        top: 8px;
+        top: 7px;
         width: 10000px;
         border-top: 2px solid #dc9a21;
         border-bottom: 1px solid #eac176;
@@ -84,17 +86,13 @@
   }
 
   &__footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 321px;
     background-color: $site-back;
 
     &-layout{
+      position: relative;
       min-width: 320px;
       max-width: 1206px;
-      margin: 0 auto;
+      margin: 36px auto 0;
     }
 
   }
@@ -102,6 +100,20 @@
 }
 @media (min-width: $phone-landscape) {
   .site {
+
+    &__aside {
+      width: 360px;
+      margin: 0 auto;
+    }
+
+    &__title{
+
+      span:before,
+      span:after{
+        top: 11px;
+      }
+
+    }
 
   }
 }
@@ -124,6 +136,12 @@
 @media (min-width: $desktop) {
 
   .site {
+    &:after{
+      display: block;
+      width: 100%;
+      height: 321px;
+      content: '';
+    }
 
     &__content{
 
@@ -132,6 +150,7 @@
         justify-content: space-between;
         min-width: 320px;
         max-width: 1206px;
+        height: 489px;
         margin: 0 auto;
       }
 
@@ -140,17 +159,35 @@
     &__aside{
       width: 360px;
     }
+
     &__wrap{
+      margin: 0;
       padding: 0;
+      width: 790px;
     }
 
     &__title{
       font-size: 22px;
 
       &_2{
+        padding-top: 3px;
         font-size: 17px;
+
+        span:before,
+        span:after{
+          top: 7px;
+        }
+
       }
 
+    }
+
+    &__footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 321px;
     }
 
   }

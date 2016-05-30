@@ -1,0 +1,29 @@
+.ask-answer {
+  display: block;
+  padding-top: 1px;
+  margin-bottom: 17px;
+  color: #6f4c38;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+
+  &__item{
+    margin-bottom: 13px;
+  }
+
+  &__question{
+    font-weight: 600;
+  }
+
+  &__all a{
+    font-size: 12px;
+    color: #da251d;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
