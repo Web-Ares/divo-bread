@@ -1,0 +1,66 @@
+.contact {
+  text-align: left;
+  margin: 0 0 30px;
+}
+.contact__column {
+  background: #FAF1DD;
+  border-radius: 6px;
+  padding: 20px 20px;
+
+  p {
+    margin: 0 0 10px;
+    color: #6f4c38;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}
+.contact__addresses {
+  margin: 0 0 50px;
+
+  address {
+    font-style: normal;
+  }
+
+}
+.contact__mail {
+  display: inline-block;
+  vertical-align: top;
+  color: #007aff;
+}
+.contact__title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #962827;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact__subtitle {
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #962827;
+  font-weight: 600;
+}
+.contact__team-sale {
+  margin: 0 0 20px;
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .contact {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items();
+    @include justify-content(space-between);
+  }
+
+  .contact__column {
+    width: 45%;
+  }
+
+}

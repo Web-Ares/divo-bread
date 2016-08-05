@@ -1,0 +1,44 @@
+.accordion {
+
+  dt {
+    position: relative;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      border: 5px solid transparent;
+      border-left: 10px solid #6f4c38;
+      content: '';
+      -webkit-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+    }
+
+    &.active {
+
+      &:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+
+    }
+
+  }
+  dd {
+    display: none;
+    padding: 0 0 10px;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}

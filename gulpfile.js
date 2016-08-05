@@ -22,6 +22,18 @@ var paths = {
             contains: [
                 'app/js/jquery.main.js'
             ]
+        },
+        {
+            dist: 'main.min.js',
+            contains: [
+                'app/js/jquery.main.js'
+            ]
+        },
+        {
+            dist: 'popup.min.js',
+            contains: [
+                'app/js/jquery.popup.js'
+            ]
         }
     ],
     vendorScripts: 'app/js/vendors/**/*.js',
